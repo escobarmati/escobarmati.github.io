@@ -1,17 +1,131 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <title>HTML Reference</title>
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="theme.css">
+
+    <style>
+      
+      * {
+        border: thin red solid;
+      }
+
+      body {
+        padding-top: 40px;
+        padding-bottom: 40px;
+      }
+
+      .banner-image {
+        width: 256px;
+        height: 256px;
+        object-fit: cover;
+        border-radius: 256px;
+      }
+      .thumbnail {
+        width: 48px;
+        height: 48px;
+        border-radius: 48px;
+        object-fit: cover;
+      }
+
+      body {
+          background-color: #f9f4ef;
+        }
+
+        .banner {
+          display: flex;
+          justify-content: center;
+        }
+
+        .name {
+          color: #020826;
+          display: flex;
+          justify-content: center;
+        }
+
+        .social-icons a {
+          color: #8c7851;
+          text-decoration: none;
+          display: flex;
+          justify-content: space-around;
+        }
+
+        .link {
+          display: flex;
+          background-color: #8c7851;
+          align-items: center;
+          flex-grow: 1;
+        }
+
+        .link a {
+          color: #fffffe;
+          text-decoration: none;
+          text-align: center;
+        }
+
+        .items {
+          display: flex;
+          flex-direction: column;
+          gap: 30px;
+          max-width: 640px;
+          align-items: center;
+        }
+
+    </style>
+
+
   </head>
   <body>
-    Hello world!!!
 
-  <div>
-    <img src="/thumbnails/mati_chill.jpg"
-    width="400">
+ <div class="items">
+
+    <div class="name">
+      <h1>Matias Escobar Llorvandi</h1>
+    </div>
+
+    <div class="banner">
+      <img src="/thumbnails/mati_chill.jpg" alt="Matias profile pic" class="banner-image">
+    </div>
+    
+    <div class="social-icons">
+      <a href="https://github.com/escobarmati" target="_blank">
+        GitHub
+      </a>
+
+      <a href="https://www.linkedin.com/in/matiescobar/" target="_blank">
+        LinkedIn
+      </a>
+
+      <a href="https://www.instagram.com/matiasescobar/" target="_blank">
+        Instagram
+      </a>
+
+      <a href="https://twitter.com/rescobarmati" target="_blank">
+        Twitter
+      </a>
+    </div>
+
+  <div class="link">
+    <img class="thumbnail" src="/thumbnails/messi_kiss.jpeg">
+
+    <a target="_blank" href="https://open.spotify.com/playlist/7hRe74whR1kocMxJVYXpXL">Argentina World Champion Music</a>
   </div>
+
+  <div class="link">
+    <img class="thumbnail" src="/thumbnails/messi_kiss.jpeg">
+
+    <a target="_blank" href="https://www.youtube.com/watch?v=vrP6Mg8A0_0">A
+      Argentina World Champion Video</a>
+  </div>
+
+  <div class="link">
+    <img class="thumbnail" src="/thumbnails/messi_kiss.jpeg">
+
+    <a target="_blank" href="https://www.youtube.com/watch?v=OdL6b5QNTMw">Argentina World Champion Fans</a>
+  </div>
+
+</div>
 
   </body>
 </html>
